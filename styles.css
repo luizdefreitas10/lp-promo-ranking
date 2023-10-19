@@ -1056,6 +1056,10 @@ a {
   order: 1;
 }
 
+.sorted-users p span {
+    color: #fff;
+}
+
 .users-list {
   width: 100%;
   margin: 50px 0;
@@ -1100,6 +1104,11 @@ a {
 @media (max-width: 435px) {
     .sorted-users {
         flex-direction: column;
+    }
+
+    .modal-sorted-users {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .sorted-users h2 {
