@@ -880,7 +880,7 @@ a {
   background-color: #424242;
   width: 1px;
   height: 618px;
-  margin: 35px 10px; 
+  margin: 35px 10px;
 }
 
 .promo-section,
@@ -936,8 +936,22 @@ a {
   border-bottom: 1px solid #444;
 }
 
+.user-2 {
+  width: 100%;
+  background: #282828;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #444;
+}
+
+.user-2 span {
+  color: #fff;
+}
+
 .user span {
-    color: #fff;
+  color: #fff;
 }
 
 .name {
@@ -950,9 +964,9 @@ a {
 }
 
 #showModal {
-    width: 100%;
+  width: 100%;
   padding: 10px 20px;
-  background: #DD0000;
+  background: #dd0000;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -973,15 +987,21 @@ a {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000;
+  overflow-y: scroll;
+}
+
+.sorted-users p span {
+  margin-left: 20px;
 }
 
 .modal-content {
-  background-color: #333;
-  margin: 15% auto;
+    background: #282828;
+  margin: 80px auto;
   padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  max-width: 600px;
+  /* border: 1px solid #888; */
+  width: 90%;
+  /* max-width: 600px; */
+  border-radius: 16px;
 }
 
 .close-btn {
@@ -1021,6 +1041,7 @@ a {
   line-height: 29px;
   letter-spacing: 0em;
   text-align: left;
+  order: 0;
 }
 
 .sorted-users h2 img {
@@ -1032,33 +1053,60 @@ a {
   justify-content: center;
   align-items: center;
   color: #9e9e9e;
+  order: 1;
 }
 
 .users-list {
-    width: 100%;
-    margin: 20px 0;
-} 
+  width: 100%;
+  margin: 50px 0;
+}
 
 @media (max-width: 700px) {
-    .ranking-container {
-        flex-direction: column;
-    }
+  .ranking-container {
+    flex-direction: column;
+  }
 
-    .separator-line {
-        margin: 0 auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: 90%;
-        height: 1px;
-    }
+  .separator-line {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 1px;
+  }
 
-    .promo-section {
-        width: 100%;
-    }
+  .promo-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 435px) {
+  .sorted-users {
+    flex-direction: column;
+  }
+}
+
+.modal-list hr {
+  margin: 0 auto;
+  width: 100%;
+  border-top: 1px solid #444;
+  border-bottom: none;
+}
+
+.modal-sorted-users {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 @media (max-width: 435px) {
     .sorted-users {
         flex-direction: column;
+    }
+
+    .sorted-users h2 {
+        order: 2; 
+    }
+
+    .sorted-users p {
+        order: 1;
     }
 }
