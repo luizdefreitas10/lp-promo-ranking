@@ -101,22 +101,33 @@
       <button id="scrollRight" class="scroll-btn scroll-right">&gt;</button>
     </section>
     <main>
-      <section class="banner-section"></section>
+      <div id="splash-screen">
+        <img src="assets/logofooterapostador.png" id="splash-logo" />
+        <div class="loading-bar-background">
+          <div class="loading-bar"></div>
+        </div>
+      </div>
+      <section class="banner-section">
+        <img alt="banner promocional" class="banner-promo"/>
+      </section>
       <div class="ranking-container">
         <section class="promo-section">
-          <h2>PROMOÇÃO LOREM IPSUM</h2>
+          <h2>FICHAS DO AMOR</h2>
+          <p>Na Apostador, você tem sorte no amor e no jogo!</p>
+          <br/>
           <p>
-            Lorem ipsum dolor sit amet consectetur. Est eleifend venenatis
-            ullamcorper viverra egestas vivamus lectus. Netus sit tincidunt
-            proin phasellus leo sed etiam quisque pellentesque. Nisi risus
-            venenatis consectetur proin nascetur amet integer egestas.
+            Com a promoção Fichas do Amor, ao fazer uma aposta em qualquer jogo
+            de cassino entre as 00h00 do dia 17/10 até as 23h59 do dia 30/10,
+            você concorre a R$6 mil em prêmios!
           </p>
+          <br/>
           <p>
-            Sodales amet a et ullamcorper risus enim. Urna hendrerit habitant
-            pharetra diam. Sit nec nullam in purus. Rutrum odio scelerisque
-            neque donec imperdiet sollicitudin. Tempus non quis posuere rhoncus
-            id eget. Tincidunt.
+            A premiação é dividida em duas semanas, onde dois sorteios são
+            realizados, o primeiro no dia 22/10 e o segundo no dia 30/10, com 3k
+            sorteados em cada semana.
           </p>
+          <br/>
+          <p>Confira os ganhadores do sorteio.</p>
         </section>
         <hr class="separator-line" />
         <section class="users-section">
@@ -125,79 +136,29 @@
               <img src="assets/usersicon.png" alt="user icon" />USUÁRIOS
               SORTEADOS
             </h2>
-            <p>Atualizado em: 17/10/2023 às 14:27:04</p>
+            <p>Atualizado em: 24/10/2023 às 11:37:04</p>
           </div>
           <div class="users-list">
-            <div class="user">
-              <span class="name">NOME</span>
-              <span class="prize">PRÊMIO</span>
-            </div>
-
-            <div class="user">
-              <span class="name">Nome do Usuário</span>
-              <span class="prize">R$200.000</span>
-            </div>
-            <div class="user">
-              <span class="name">Nome do Usuário</span>
-              <span class="prize">R$200.000</span>
-            </div>
-            <div class="user">
-              <span class="name">Nome do Usuário</span>
-              <span class="prize">R$200.000</span>
-            </div>
-            <div class="user">
-              <span class="name">Nome do Usuário</span>
-              <span class="prize">R$200.000</span>
-            </div>
-            <div class="user">
-              <span class="name">Nome do Usuário</span>
-              <span class="prize">R$200.000</span>
-            </div>
-            <div class="user">
-              <span class="name">Nome do Usuário</span>
-              <span class="prize">R$200.000</span>
-            </div>
-            <div class="user">
-              <span class="name">Nome do Usuário</span>
-              <span class="prize">R$200.000</span>
-            </div>
-            <div class="user">
-              <span class="name">Nome do Usuário</span>
-              <span class="prize">R$200.000</span>
-            </div>
-            <div class="user">
-              <span class="name">Nome do Usuário</span>
-              <span class="prize">R$200.000</span>
-            </div>
-            <div class="user">
-              <span class="name">Nome do Usuário</span>
-              <span class="prize">R$200.000</span>
-            </div>
-            <div class="user">
-              <span class="name">Nome do Usuário</span>
-              <span class="prize">R$200.000</span>
-            </div>
           </div>
-
           <button id="showModal">VER TODOS</button>
         </section>
         <div id="modal" class="modal">
           <div class="modal-content">
             <div class="modal-list">
-              <div class="sorted-users modal-sorted-users ">
+              <div class="sorted-users modal-sorted-users">
                 <h2>
                   <img src="assets/usersicon.png" alt="user icon" />USUÁRIOS
                   SORTEADOS
                 </h2>
                 <p>
-                  Atualizado em: 17/10/2023 às 14:27:04<span class="close-btn"
+                  Atualizado em: 24/10/2023 às 11:37:04<span class="close-btn"
                     >&times;</span
                   >
                 </p>
               </div>
-              <hr/>
-              <div class="users-list">
-                <div class="user-2">
+              <hr />
+              <div class="users-list-modal">
+                <!-- <div class="user-2">
                   <span class="name">NOME</span>
                   <span class="prize">PRÊMIO</span>
                 </div>
@@ -289,7 +250,7 @@
                 <div class="user-2">
                   <span class="name">Nome do Usuário</span>
                   <span class="prize">R$200.000</span>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
